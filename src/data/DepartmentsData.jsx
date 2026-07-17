@@ -16,7 +16,7 @@ import {
  * ------------------------------------------------------------------
  */
 export const EVENT = {
-  collegeName: "Mithibai College",
+  collegeName: "Mithibai Cultural Committee",
   eventName: "ATS 2026",
   tagline: "The annual talent search - find your stage.",
 };
