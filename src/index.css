@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "DisplayFont";
+  src: url("./assets/fonts/AcherusMilitantBold.otf") format("opentype");
+  font-weight: 400 700; /* remove the range if the file is a single weight */
+  font-display: swap;
+}

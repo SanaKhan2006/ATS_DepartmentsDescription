@@ -79,7 +79,7 @@ export default function DepartmentsPage() {
           </p>
           <h1
             className="text-4xl sm:text-6xl mb-4 leading-tight"
-            style={{ fontFamily: "'Fraunces', serif", fontWeight: 700 }}
+            style={{ fontFamily: "'DisplayFont', serif", fontWeight: 700 }}
           >
             {EVENT.eventName}
           </h1>
