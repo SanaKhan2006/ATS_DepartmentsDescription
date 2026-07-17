@@ -1,12 +1,24 @@
 import {
-  Music2,
-  Sparkles,
-  Mic2,
-  Palette,
   Camera,
   BookOpen,
-  Shirt,
+  Sparkles,
+  Mic2,
+  Gamepad2,
+  Smartphone,
+  ShieldCheck,
+  Star,
+  PartyPopper,
+  Truck,
+  Settings,
+  Megaphone,
+  PenTool,
+  Paintbrush,
+  Coffee,
+  ClipboardList,
   Code2,
+  Target,
+  Briefcase,
+  Cpu,
 } from "lucide-react";
 
 /**
@@ -17,97 +29,194 @@ import {
  */
 export const EVENT = {
   collegeName: "Mithibai Cultural Committee",
-  eventName: "ATS 2026",
+  eventName: "Annual Talent Search",
   tagline: "The annual talent search - find your stage.",
 };
 
 /**
  * ------------------------------------------------------------------
  *  EDIT ME: Departments
- *  This is the ONLY file you need to touch to add, remove, or change
- *  a department. DepartmentsPage.jsx just reads this array and
- *  renders it — no styling lives here.
- *
- *  - id:          unique short id (used internally, keep unique)
- *  - name:        department name shown on the card
- *  - icon:        one of the icons imported above (see lucide.dev
- *                 for the full icon set if you want a different one)
- *  - tagline:     one-line summary, always visible
- *  - highlights:  short tags shown as chips (event types under this dept.)
- *  - description: longer paragraph, shown when the card is expanded
  * ------------------------------------------------------------------
  */
 export const departments = [
   {
-    id: "music",
-    name: "Music",
-    icon: Music2,
-    tagline: "Solo, group and instrumental performances.",
-    highlights: ["Solo Singing", "Battle of Bands", "Instrumental"],
+    id: "photomedia",
+    name: "Photomedia",
+    icon: Camera,
+    tagline: "Documenting everything from behind the scenes to the main stage.",
+    highlights: [],
     description:
-      "Open to vocalists and instrumentalists of every genre — classical, western, fusion, or anything in between. Whether you sing solo or lead a full band, this department is where the college's musical talent takes the mic.",
+      "Our department stays the most active, documenting from what's going on behind the scenes to the stage, from the fair to the turfs! Additionally, we work on the official before and after movie!",
+  },
+  {
+    id: "literary-arts",
+    name: "Literary Arts",
+    icon: BookOpen,
+    tagline: "Crafting words that turn into inspiration.",
+    highlights: [],
+    description:
+      "We handle everything from scripts, event content to captions and communication. We are crafting words that can turn into inspiration.",
   },
   {
     id: "dance",
     name: "Dance",
     icon: Sparkles,
-    tagline: "Solo, group, classical and freestyle acts.",
-    highlights: ["Solo", "Group", "Classical", "Freestyle"],
+    tagline: "Where passion meets performance.",
+    highlights: [],
     description:
-      "From classical forms to freestyle and everything contemporary, the dance department welcomes individual performers and full crews. Choreography, energy, and stage presence are what we're looking for.",
+      "The Dance department is where passion meets performance, celebrating creativity, discipline and the art of movement. We aim to provide every dancer a platform to express, inspire and shine!!",
   },
   {
     id: "drama",
-    name: "Drama & Theatre",
+    name: "Drama",
     icon: Mic2,
-    tagline: "Street plays, mono acts and skits.",
-    highlights: ["Street Play", "Mono Act", "Skit"],
+    tagline: "Bringing stories to life with creativity and flair.",
+    highlights: [],
     description:
-      "For storytellers who'd rather show than tell. Bring a script to life on stage — solo monologues, short skits, or full street-play productions that speak to real issues and real audiences.",
+      "Brings stories to life by organizing and executing all drama events with creativity, precision, and flair.",
+  },
+  {
+    id: "gaming-sports",
+    name: "Gaming & Sports",
+    icon: Gamepad2,
+    tagline: "Turn your passion into action with epic tournaments and matches.",
+    highlights: [],
+    description:
+      "Turn your passion into action join the Gaming & Sports Department and create unforgettable events! From epic tournaments to thrilling matches, be the team that makes the fest come alive. Don't just watch the excitement lead it. Join us and level up the fest experience you will be the people who build it.",
+  },
+  {
+    id: "social-media",
+    name: "Social Media",
+    icon: Smartphone,
+    tagline: "Capturing the best ATS moments and keeping everyone updated.",
+    highlights: [],
+    description:
+      "Capture the best ATS moments and create FOMO, create exciting content, and keep everyone updated with Behind the scenes.",
+  },
+  {
+    id: "security",
+    name: "Security",
+    icon: ShieldCheck,
+    tagline: "Ensuring safety and preventing chaos during the fest.",
+    highlights: [],
+    description:
+      "Our department ensures safety of the fest, prevents any chaos during the fest and controls overcrowding during the fest.",
+  },
+  {
+    id: "pro-shows",
+    name: "Pro Shows",
+    icon: Star,
+    tagline: "End-to-end coordination with celebrities and influencers.",
+    highlights: [],
+    description:
+      "We manage end-to-end coordination with celebrities and influencers, from outreach and negotiations to on-ground hospitality, ensuring a seamless experience for talent and audience alike.",
+  },
+  {
+    id: "informals",
+    name: "Informals",
+    icon: PartyPopper,
+    tagline: "Innovative games, unique concepts, and crowd-favourite activities.",
+    highlights: [],
+    description:
+      "Brings ATS to life through innovative games, unique concepts, and crowd-favourite activities. Perfect for those who love creativity, teamwork, and event management.",
+  },
+  {
+    id: "logistics",
+    name: "Logistics",
+    icon: Truck,
+    tagline: "Managing registrations, scheduling, and on-ground operations.",
+    highlights: [],
+    description:
+      "Ensures smooth execution of every event by managing registrations, scheduling, participant coordination, and on-ground operations, making every ATS experience seamless and well-organized.",
+  },
+  {
+    id: "production",
+    name: "Production",
+    icon: Settings,
+    tagline: "Managing all setups and venue permissions.",
+    highlights: [],
+    description:
+      "The Production Department ensures all events are executed smoothly on the ground. It manages all the setups and sorts the venue permissions.",
+  },
+  {
+    id: "pr",
+    name: "Public Relations",
+    icon: Megaphone,
+    tagline: "Managing the event's image and increasing campus outreach.",
+    highlights: [],
+    description:
+      "The public relations department manages the event's image, attract participants and members, and increases campus outreach of the fest.",
+  },
+  {
+    id: "graphics",
+    name: "Graphics",
+    icon: PenTool,
+    tagline: "Bringing the vision of ATS to life through creative design.",
+    highlights: [],
+    description:
+      "The graphics department brings the vision of ATS to life through creative design. From social media posts, brochures, ID cards, POPs, and marketing decks to event branding, every visual you see is designed here. If you're passionate about creativity and want your work to be seen by thousands, this is the place for you!",
   },
   {
     id: "fine-arts",
     name: "Fine Arts",
-    icon: Palette,
-    tagline: "Painting, sketching and live art.",
-    highlights: ["Painting", "Sketching", "Rangoli"],
+    icon: Paintbrush,
+    tagline: "Crafting décor and creating artistic experiences.",
+    highlights: [],
     description:
-      "A department for visual storytellers — painters, sketch artists, and anyone who can turn a blank canvas or floor space into something worth stopping for. Live art competitions included.",
+      "The Fine Arts Department is where imagination meets execution. We craft the décor, create artistic experiences, and ensure every corner of the fest reflects creativity and excellence.",
   },
   {
-    id: "photography",
-    name: "Photography & Film",
-    icon: Camera,
-    tagline: "Photography, short films and reels.",
-    highlights: ["Photography", "Short Film", "Reels"],
+    id: "hospitality",
+    name: "Hospitality",
+    icon: Coffee,
+    tagline: "Ensuring everyone enjoys a comfortable and memorable experience.",
+    highlights: [],
     description:
-      "For anyone who sees stories through a lens. Covers still photography competitions, short-film submissions, and reel-making challenges — open to both phone and camera shooters.",
+      "From welcoming esteemed judges to managing food, water, barter partnerships, and on-ground care, the Hospitality Department ensures every individual enjoys a comfortable and memorable event experience.",
   },
   {
-    id: "literary",
-    name: "Literary & Quiz",
-    icon: BookOpen,
-    tagline: "Debate, quiz and creative writing.",
-    highlights: ["Debate", "Quiz", "Creative Writing"],
+    id: "resource-management",
+    name: "Resource Management",
+    icon: ClipboardList,
+    tagline: "Handling resources, coordination, budgeting, and vendor relations.",
+    highlights: [],
     description:
-      "The department for sharp minds and sharper words. Includes debate competitions, general quizzes, and creative writing contests across poetry, fiction, and essays.",
+      "Resource Management ensures every event has the resources, coordination, and the support it needs to run seamlessly. RM works on budgeting and vendor relations. From stationary, Printing to last minute supplies we handle all the inter-departmental needs.",
   },
   {
-    id: "fashion",
-    name: "Fashion",
-    icon: Shirt,
-    tagline: "Ramp walks and themed styling.",
-    highlights: ["Ramp Walk", "Theme Styling"],
+    id: "marketing",
+    name: "Marketing",
+    icon: Target,
+    tagline: "Ensuring every event reaches the right audience through strategic planning.",
+    highlights: [],
     description:
-      "For students with an eye for style and the confidence to own a runway. Includes themed ramp walks judged on creativity, coordination, and stage presence.",
+      "Marketing ensures every event reaches the right audience through strategic planning, creative campaigns, promotions, and consistent communication. From building awareness to driving engagement, we shape how every event is presented and perceived.",
   },
   {
-    id: "tech",
-    name: "Tech & Innovation",
+    id: "business-events",
+    name: "Business Events",
+    icon: Briefcase,
+    tagline: "Testing leadership and problem-solving through exciting challenges.",
+    highlights: [],
+    description:
+      "The Business Events Department brings together strategy, innovation, and competition through exciting challenges that test leadership, creativity, problem-solving, and decision-making. From case studies to startup simulations, it provides a platform for participants to think like future entrepreneurs and business leaders while competing in dynamic, real-world scenarios.",
+  },
+  {
+    id: "technical",
+    name: "Technical",
+    icon: Cpu,
+    tagline: "The backbone of the event, managing everything behind the scenes.",
+    highlights: [],
+    description:
+      "It is the backbone of the whole event. They manage everything behind the scenes, ensuring the sound, lighting, internet, and equipment run perfectly so the event goes off without a hitch. Without technicals event cannot work.",
+  },
+  {
+    id: "website",
+    name: "Website",
     icon: Code2,
-    tagline: "Coding, web design and robotics.",
-    highlights: ["Coding", "Web Design", "Robotics"],
+    tagline: "Building and maintaining the digital face of ATS.",
+    highlights: [],
     description:
-      "For builders and problem-solvers. Covers competitive coding, web/app design challenges, and robotics demos — a talent search isn't just about the stage.",
+      "The Website department is responsible for building and maintaining the digital face of the fest. From coding interactive features to ensuring a seamless online experience, we bring the event to screens everywhere.",
   },
 ];
