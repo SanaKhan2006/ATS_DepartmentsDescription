@@ -27,14 +27,26 @@ export default function DepartmentsPage() {
       {/* Header & Search (Sticky at top)                            */}
       {/* ---------------------------------------------------------- */}
       <div className="sticky top-0 z-30 pt-6 pb-0 px-6 rounded-b-[2.5rem] bg-navy/95 backdrop-blur-md border-b border-card-bg">
-        <header className="mb-4 mt-2">
-          <div className="mb-2 text-gold flex items-baseline gap-1.5 sm:gap-2">
-            <span className="text-sm sm:text-lg font-amsterdam opacity-90">{EVENT.collegeName}</span>
-            <span className="text-[10px] tracking-widest uppercase opacity-60 font-work">Presents</span>
+        <header className="mb-6 mt-4 flex flex-col items-center text-center">
+          {/* Line 1: Logo and College Name */}
+          <div className="flex items-center justify-center gap-3 text-white mb-2 whitespace-nowrap">
+            <img src="/logo-white.png" alt="MCC Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain shrink-0" />
+            <span className="text-xs sm:text-base md:text-lg font-amsterdam opacity-95 tracking-wide">{EVENT.collegeName}</span>
           </div>
-          <h1 className="text-4xl sm:text-5xl leading-tight font-display flex items-center gap-4">
-            <img src="/ats.webp" alt="ATS Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl shrink-0" />
-            <span className="break-words">{EVENT.eventName}</span>
+
+          {/* Line 2: PRESENTS (with decorative lines) */}
+          <div className="flex items-center gap-4 w-full max-w-[200px] sm:max-w-[280px] mt-3 mb-6">
+            <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-gold opacity-40"></div>
+            <span className="text-[12px] sm:text-[15px] tracking-[0.4em] uppercase opacity-90 font-work text-gold whitespace-nowrap">
+              Presents
+            </span>
+            <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-gold opacity-40"></div>
+          </div>
+
+          {/* Line 3: ATS Logo and Event Name */}
+          <h1 className="text-3xl sm:text-5xl md:text-6xl leading-tight font-archerus flex items-center justify-center gap-3 sm:gap-4 w-full whitespace-nowrap">
+            <img src="/ats.webp" alt="ATS Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain rounded-xl shrink-0" />
+            <span className="drop-shadow-md">{EVENT.eventName}</span>
           </h1>
         </header>
 
@@ -68,7 +80,7 @@ export default function DepartmentsPage() {
       {/* ---------------------------------------------------------- */}
       {/* Carousel Section                                           */}
       {/* ---------------------------------------------------------- */}
-      <div className="pt-24 pb-20">
+      <div className="pt-14 pb-10">
         {filteredDepartments.length === 0 ? (
           <div className="text-center py-20 px-6">
             <p className="text-sm opacity-60">

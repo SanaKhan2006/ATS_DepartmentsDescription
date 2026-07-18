@@ -10,11 +10,12 @@
   --font-fraunces: "Fraunces", serif;
   --font-work: "Work Sans", sans-serif;
   --font-display: "DisplayFont", sans-serif;
+  --font-archerus: "Acherus", sans-serif;
   --font-amsterdam: "Amsterdam", cursive;
 }
 
 @font-face {
-  font-family: "DisplayFont";
+  font-family: "Acherus";
   src: url("./assets/fonts/AcherusMilitantBold.otf") format("opentype");
   font-weight: 400 700;
   /* remove the range if the file is a single weight */
