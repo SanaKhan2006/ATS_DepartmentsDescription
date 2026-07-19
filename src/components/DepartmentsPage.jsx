@@ -26,7 +26,7 @@ export default function DepartmentsPage() {
       {/* ---------------------------------------------------------- */}
       {/* Header & Search (Sticky at top)                            */}
       {/* ---------------------------------------------------------- */}
-      <div className="sticky top-0 z-30 pt-6 pb-0 px-6 rounded-b-[2.5rem] bg-navy/95 backdrop-blur-md border-b border-card-bg">
+      <div className="pt-6 pb-0 px-6 rounded-b-[2.5rem] bg-navy/95 backdrop-blur-md border-b border-card-bg">
         <header className="mb-6 mt-4 flex flex-col items-center text-center">
           {/* Line 1: Logo and College Name */}
           <div className="flex items-center justify-center gap-3 text-white mb-2 whitespace-nowrap">
@@ -80,7 +80,7 @@ export default function DepartmentsPage() {
       {/* ---------------------------------------------------------- */}
       {/* Carousel Section                                           */}
       {/* ---------------------------------------------------------- */}
-      <div className="pt-14 pb-10">
+      <div className="pt-8 pb-10">
         {filteredDepartments.length === 0 ? (
           <div className="text-center py-20 px-6">
             <p className="text-sm opacity-60">
