@@ -88,7 +88,7 @@ export default function DepartmentsPage() {
             </p>
           </div>
         ) : (
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-5 overscroll-x-contain touch-pan-x">
+          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-5">
             {filteredDepartments.map((dept, index) => {
               const Icon = dept.icon;
 
