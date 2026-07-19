@@ -22,9 +22,9 @@ export default function DepartmentsPage() {
   const selectedDept = departments.find((d) => d.id === selectedDeptId);
 
   return (
-    <div className="h-screen w-full relative overflow-y-auto overflow-x-hidden no-scrollbar bg-navy text-beige font-work">
+     <div className="min-h-screen w-full relative bg-navy text-beige font-work">
       {/* ---------------------------------------------------------- */}
-      {/* Header & Search (Sticky at top)                            */}
+      {/* Header & Search                           */}
       {/* ---------------------------------------------------------- */}
       <div className="pt-6 pb-0 px-6 rounded-b-[2.5rem] bg-navy/95 backdrop-blur-md border-b border-card-bg">
         <header className="mb-6 mt-4 flex flex-col items-center text-center">
@@ -88,7 +88,7 @@ export default function DepartmentsPage() {
             </p>
           </div>
         ) : (
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-5">
+          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-5 overscroll-x-contain touch-pan-x">
             {filteredDepartments.map((dept, index) => {
               const Icon = dept.icon;
 
