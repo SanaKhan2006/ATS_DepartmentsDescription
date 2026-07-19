@@ -22,7 +22,7 @@ export default function DepartmentsPage() {
   const selectedDept = departments.find((d) => d.id === selectedDeptId);
 
   return (
-     <div className="min-h-screen w-full relative bg-navy text-beige font-work">
+    <div className="min-h-screen w-full relative bg-navy text-beige font-work">
       {/* ---------------------------------------------------------- */}
       {/* Header & Search                           */}
       {/* ---------------------------------------------------------- */}
@@ -46,7 +46,7 @@ export default function DepartmentsPage() {
           {/* Line 3: ATS Logo and Event Name */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl leading-tight font-archerus flex items-center justify-center gap-3 sm:gap-4 w-full whitespace-nowrap">
             <img src="/ats.webp" alt="ATS Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain rounded-xl shrink-0" />
-            <span className="drop-shadow-md">{EVENT.eventName}</span>
+            <span className="drop-shadow-md pr-5">{EVENT.eventName}</span>
           </h1>
         </header>
 
